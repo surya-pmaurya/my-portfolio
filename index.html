@@ -1,0 +1,347 @@
+<!-- ------------------My project-------------------- -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My project Website.</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/bb72798fb5.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="image/fevicon.jpg" type="image/jpg" />
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <div>
+            <img src="image/logo.png" class="logo" />
+          </div>
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-times" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Back-End Developer</p>
+          <h1>Hii, I'm <span>Surya Maurya</span><br /></h1>
+          <h2>From Prayagraj, India.</h2>
+          <h4>Welcome to My project <i class="fa-solid fa-heart"></i> .</h4>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------About--------- -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="image/profile.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About</h1>
+            <p>
+              Motivated and detail-oriented Computer Applications graduate with
+              a solid foundation in software development, particularly in
+              backend systems using NestJS, JavaScript, and MySQL. Experienced
+              in building real-world projects like an E-Commerce Admin System
+              and a Personal project Website, demonstrating proficiency in
+              authentication, REST APIs, validation, and front-end development.
+              Passionate about continuous learning and eager to contribute
+              effectively as a fresher, bringing strong problem-solving skills,
+              curiosity, and a collaborative mindset to any team.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                <b>Skills</b>
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                <b>Experience</b>
+              </p>
+              <p class="tab-links" onclick="opentab('education')">
+                <b>Education</b>
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <p>
+                    <span><b>Java(SE)</b></span
+                    ><br />
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>JavaScript</b></span
+                    ><br />
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>Node.js</b></span
+                    ><br />
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>NestJs</b></span
+                    ><br />
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>Expressjs</b></span
+                    ><br />
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>HTML5/CSS3</b></span
+                    ><br />
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <p>
+                    <span><b>Node.js</b></span
+                    ><br />5+ months experience in backend development with
+                    NestJS.js & RESTful APIs
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>NestJs</b></span
+                    ><br />4+ months expirence in building scalable backend
+                    systems using modules, services, guards, and interceptors
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>JavaScript</b></span
+                    ><br />Strong knowledge in ES6+, array methods, async
+                    programming and promises
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>TypeScript</b></span
+                    ><br />Hands-on-Expereince in TypeScript with NestJS for
+                    writing strongly-typed backend logic
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>MySQL</b></span
+                    ><br />1+ year of experience with MySQL Database to Designed
+                    and managed relational databases with complex queries
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>SwaggerUI</b></span
+                    ><br />Understanding of Swagger UI for API documentation and
+                    seamless testing.
+                  </p>
+                </li>
+                <li></li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <p>
+                    <span><b>MCA</b></span
+                    ><br />I've Completed Master's In Computer Application from
+                    Bansal Institute of Science and Technology, Bhopal and
+                    scored 7.65 CGPA.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>BCA</b></span
+                    ><br />Bachelor's In Computer Application from MGKVP
+                    University Varanasi.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    <span><b>SSC and HSC</b></span
+                    ><br />Senior Secondary Certification from Gomti Inter
+                    College Phulpur
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ----------------------------Services---------------------------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">Our Services</h1>
+        <div class="services-list">
+          <div class="service-card">
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p class="services-description">
+              We create modern, responsive, and user-friendly websites using
+              HTML, CSS, and JavaScript that look great on all devices and
+              deliver a seamless user experience.
+            </p>
+            <a href="#" class="toggle-btn">Learn More</a>
+          </div>
+          <div class="service-card">
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p class="services-description">
+              We design interactive and engaging mobile app interfaces focused
+              on user experience, performance, and visual appeal across both
+              Android and iOS platforms.
+            </p>
+            <a href="#" class="toggle-btn">Learn More</a>
+          </div>
+          <div class="service-card">
+            <i class="fa-solid fa-database"></i>
+            <h2>Backend Development</h2>
+            <p class="services-description">
+              We build secure, scalable, and high-performance server-side
+              applications using Node.js, NestJS, and MySQL with robust
+              authentication and API integrations.
+            </p>
+            <a href="#" class="toggle-btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------------Projects------------------ -->
+
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+          <div class="project">
+            <img src="image/project1.jpg" />
+            <div class="layer">
+              <h3>E-Commerce Admin Backend</h3>
+              <p>
+                Built with NestJS, JWT, and MySQL includes secure login, RBAC,
+                product & offer management, and API documentation via Swagger.
+              </p>
+              <a
+                href="https://github.com/surya-pmaurya/e-commerce-backend"
+                target="blank"
+                ><i class="fas fa-external-link-alt"> </i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="image/project2.jpg" />
+            <div class="layer">
+              <h3>Personal Portfolio Website</h3>
+              <p>
+                A fully responsive HTML/CSS/JavaScript website showcasing my
+                skills, projects, and resume with a smooth UI and animations.
+              </p>
+              <a href="https://myproject.live" target="blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+          <div class="project">
+            <img src="image/project3.jpg" />
+            <div class="layer">
+              <h3>Library Management System</h3>
+              <p>
+                Java-based web app using Servlets, JSP, and MySQL. Manages
+                books, students, attendance, and admin features in an academic
+                setting.
+              </p>
+              <a
+                href="https://github.com/surya-pmaurya/library-management-system"
+                target="blank"
+                ><i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+      </div>
+    </div>
+
+    <!-- -----------------contact us------------------ -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Us</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>mauryasurya22@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i> 09984685507</p>
+            <div class="social-icon">
+              <a href="https://github.com/surya-pmaurya"
+                ><i class="fa-brands fa-square-github"></i
+              ></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="https://www.instagram.com/surya-p-maurya"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/surya-prakash-maurya"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="image/info.pdf" download class="btn btn2">Download Info</a>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="text"
+                name="E-mail"
+                placeholder="Your E-mail"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                cols="30"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>
+          Copyright @ SuryaPMaurya <i class="fa-solid fa-heart"></i> All right
+          reserved.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="gsheet.js"></script>
+  </body>
+</html>
