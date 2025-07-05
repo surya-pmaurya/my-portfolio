@@ -17,11 +17,14 @@ form.addEventListener("submit", (e) => {
       setTimeout(function () {
         msg.style.color = "#4BB543";
         msg.innerHTML = "✅ Your Response Submited Successfully";
-
         setTimeout(() => {
           msg.style.opacity = "1";
+          setTimeout(() => {
+            msg.style.opacity = "0";
+          }, 2500);
         }, 1000);
       }, 500);
+
       form.reset();
     })
     .catch((error) => {
