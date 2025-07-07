@@ -535,11 +535,11 @@ nav .fa-solid {
 
 /* ------------------CSS for iPade or Tab---------------------------- */
 
-nav .fa-solid {
+/* nav .fa-solid {
   display: none;
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px min-width:700px) {
   #header {
     background-image: url(image/phone-background.jpg);
   }
@@ -616,8 +616,8 @@ nav .fa-solid {
   }
   .project {
     display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center (optional) */
+    justify-content: center;
+    align-items: center; 
     position: relative;
     overflow: hidden;
   }
@@ -641,4 +641,4 @@ nav .fa-solid {
   color: darkolivegreen;
   margin-top: -40px;
   display: block;
-}
+} */
