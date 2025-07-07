@@ -11,6 +11,11 @@
       src="https://kit.fontawesome.com/bb72798fb5.js"
       crossorigin="anonymous"
     ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="icon" href="image/fevicon.jpg" type="image/jpg" />
   </head>
 
@@ -52,9 +57,9 @@
           <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-          <p>Back-End Developer</p>
-          <h1>Hii, I'm <span>Surya Prakash Maurya</span><br /></h1>
-          <h2>From Prayagraj, India.</h2>
+          <p><span class="typing-animation" id="typing-role"></span></p>
+          <h1>Hii, I'm <span>Surya Maurya</span><br /></h1>
+          <h2>Based in Prayagraj, India.</h2>
           <h4>Welcome to My Portfolio<i class="fa-solid fa-heart"></i> .</h4>
         </div>
       </div>
@@ -281,7 +286,7 @@
                 skills, projects, and resume with a smooth UI and animations.
               </p>
               <a
-                href=https://surya-pmaurya.github.io/my-portfolio/
+                href="https://surya-pmaurya.github.io/my-portfolio/"
                 target="_self"
                 rel="noopener noreferrer"
                 ><i class="fas fa-external-link-alt"></i
@@ -306,7 +311,7 @@
             </div>
           </div>
         </div>
-        <a href="#" class="btn">See More</a>
+        <a href="#projects" class="btn">See More</a>
       </div>
     </div>
 
@@ -318,9 +323,15 @@
           <div class="contact-left">
             <h1 class="sub-title">Contact Us</h1>
             <p>
-              <i class="fa-solid fa-paper-plane"></i>mauryasurya22@gmail.com
+              <a id="contact-to" href="mailto:mauryasurya22@gmail.com"
+                ><i class="fa-solid fa-envelope"></i>mauryasurya22@gmail.com
+              </a>
             </p>
-            <p><i class="fa-solid fa-phone"></i> 09984685507</p>
+            <p>
+              <a id="contact-to" href="tel:+919984685507"
+                ><i class="fa-solid fa-phone"></i>+91 99846 85507
+              </a>
+            </p>
             <div class="social-icon">
               <a
                 href="https://github.com/surya-pmaurya"
@@ -331,7 +342,9 @@
               <a href="#" target="_blank" rel="noopener noreferrer"
                 ><i class="fab fa-twitter-square"></i
               ></a>
-              <a href="https://www.instagram.com/_surya_p_maurya_" target="_blank"
+              <a
+                href="https://www.instagram.com/_surya_p_maurya_"
+                target="_blank"
                 ><i class="fab fa-instagram"></i
               ></a>
               <a
@@ -351,17 +364,30 @@
             >
           </div>
           <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Your Name" required />
+            <form
+              onsubmit="return validateGmail()"
+              novalidate
+              name="submit-to-google-sheet"
+            >
               <input
                 type="text"
-                name="E-mail"
-                placeholder="Your E-mail"
+                id="inputArea"
+                name="Name"
+                placeholder="Your Name"
                 required
               />
+              <input
+                type="text"
+                id="inputEmail"
+                name="E-mail"
+                placeholder="Your E-mail"
+                pattern=".*@gmail\.com$"
+                required
+              />
+              <span id="emailError"></span> <br />
               <textarea
                 name="Message"
-                id=""
+                id="inputArea"
                 cols="30"
                 rows="6"
                 placeholder="Your Message"
