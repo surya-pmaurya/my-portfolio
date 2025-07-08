@@ -149,22 +149,22 @@
                 <li>
                   <p>
                     <span><b>NestJs</b></span
-                    ><br />4+ months expirence in building scalable backend
+                    ><br />5+ months expirence in building scalable backend
                     systems using modules, services, guards, and interceptors
                   </p>
                 </li>
                 <li>
                   <p>
                     <span><b>JavaScript</b></span
-                    ><br />Strong knowledge in ES6+, array methods, async
-                    programming and promises
+                    ><br />1+ year expirence in JavaScript ES6+, array methods,
+                    async programming and promises
                   </p>
                 </li>
                 <li>
                   <p>
                     <span><b>TypeScript</b></span
-                    ><br />Hands-on-Expereince in TypeScript with NestJS for
-                    writing strongly-typed backend logic
+                    ><br />6+ months Expereince in TypeScript with NestJS
+                    framework for writing strongly-typed backend logic
                   </p>
                 </li>
                 <li>
@@ -177,8 +177,8 @@
                 <li>
                   <p>
                     <span><b>SwaggerUI</b></span
-                    ><br />Understanding of Swagger UI for API documentation and
-                    seamless testing.
+                    ><br />5+ months experience of Swagger UI for API
+                    documentation and seamless APIs testing.
                   </p>
                 </li>
                 <li></li>
@@ -229,7 +229,7 @@
               HTML, CSS, and JavaScript that look great on all devices and
               deliver a seamless user experience.
             </p>
-            <a href="#" class="toggle-btn">Learn More</a>
+            <a href="#" class="toggle-btn">Read More</a>
           </div>
           <div class="service-card">
             <i class="fa-brands fa-app-store"></i>
@@ -239,7 +239,7 @@
               on user experience, performance, and visual appeal across both
               Android and iOS platforms.
             </p>
-            <a href="#" class="toggle-btn">Learn More</a>
+            <a href="#" class="toggle-btn">Read More</a>
           </div>
           <div class="service-card">
             <i class="fa-solid fa-database"></i>
@@ -249,7 +249,7 @@
               applications using Node.js, NestJS, and MySQL with robust
               authentication and API integrations.
             </p>
-            <a href="#" class="toggle-btn">Learn More</a>
+            <a href="#" class="toggle-btn">Read More</a>
           </div>
         </div>
       </div>
@@ -311,7 +311,42 @@
             </div>
           </div>
         </div>
-        <a href="#projects" class="btn">See More</a>
+        <div class="extra-projects">
+          <div class="project">
+            <img src="image/project4.jpg" />
+            <div class="layer">
+              <h3>Project 4</h3>
+              <p>Details about project 4.</p>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="image/project5.jpg" />
+            <div class="layer">
+              <h3>Project 5</h3>
+              <p>Details about project 5.</p>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="project">
+            <img src="image/project6.jpg" />
+            <div class="layer">
+              <h3>Project 6</h3>
+              <p>Details about project 6.</p>
+              <a href="#" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a id="seeMoreBtn" class="btn">See More</a>
       </div>
     </div>
 
@@ -371,11 +406,12 @@
             >
               <input
                 type="text"
-                id="inputArea"
+                id="inputName"
                 name="Name"
                 placeholder="Your Name"
                 required
               />
+              <span id="nameError"></span> <br />
               <input
                 type="text"
                 id="inputEmail"
@@ -387,11 +423,12 @@
               <span id="emailError"></span> <br />
               <textarea
                 name="Message"
-                id="inputArea"
+                id="inputMessage"
                 cols="30"
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
+              <span id="msgError"></span> <br />
               <button type="submit" class="btn btn2">Submit</button>
             </form>
             <span id="msg"></span>

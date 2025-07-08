@@ -48,13 +48,13 @@ function opentab(tabname) {
 
 //action btn for side menu
 
-let sidemen = document.getElementById("sidemenu");
+let sidemenu = document.getElementById("sidemenu");
 
 function openmenu() {
-  sidemen.style.right = "0";
+  sidemenu.style.right = "0";
 }
 function closemenu() {
-  sidemen.style.right = "-200px";
+  sidemenu.style.right = "-200px";
 }
 
 //service function for Read more
@@ -70,7 +70,22 @@ document.addEventListener("DOMContentLoaded", function () {
       // Toggle button text
       this.textContent = card.classList.contains("expanded")
         ? "Read Less"
-        : "Learn More";
+        : "Read More";
     });
   });
+});
+
+// extra  Projects Toggle
+document.addEventListener("DOMContentLoaded", function () {
+  const seeMoreBtn = document.getElementById("seeMoreBtn");
+  const extraProjects = document.querySelector(".extra-projects");
+
+  if (seeMoreBtn && extraProjects) {
+    seeMoreBtn.addEventListener("click", () => {
+      extraProjects.classList.toggle("show");
+      seeMoreBtn.textContent = extraProjects.classList.contains("show")
+        ? "See Less"
+        : "See More";
+    });
+  }
 });

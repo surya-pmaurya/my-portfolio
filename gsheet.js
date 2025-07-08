@@ -2,32 +2,58 @@ const scriptURL =
   "https://script.google.com/macros/s/AKfycbzQ5fIu0Z8BualyglVHdbpUykRKTVKgu-JzUdbm-R0_SlaTpqK7wjRjwCRrFdnC85S-1A/exec";
 const form = document.forms["submit-to-google-sheet"];
 const msg = document.getElementById("msg");
-const errorMsg = document.getElementById("emailError");
+const emailError = document.getElementById("emailError");
+const nameError = document.getElementById("nameError");
+const msgError = document.getElementById("msgError");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   // for email validation
-  const inputArea = document.getElementById("inputEmail");
-  const email = inputArea.value.trim();
-  errorMsg.textContent = "";
-  errorMsg.style.opacity = "0";
-  if (email === "") {
+  const inputEmail = document.getElementById("inputEmail").value.trim();
+  const inputName = document.getElementById("inputName").value.trim();
+  const inputMessage = document.getElementById("inputMessage").value.trim();
+
+  nameError.textContent = "";
+  nameError.style.opacity = "0";
+  if (inputName === "") {
     setTimeout(() => {
-      errorMsg.textContent = "Email is required.";
-      errorMsg.style.opacity = "1";
+      nameError.textContent = "Name is required.";
+      nameError.style.opacity = "1";
+    }, 100);
+    return;
+  }
+
+  emailError.textContent = "";
+  emailError.style.opacity = "0";
+  if (inputEmail === "") {
+    setTimeout(() => {
+      emailError.textContent = "Email is required.";
+      emailError.style.opacity = "1";
     }, 100);
     return;
   }
   if (
     !(
-      email.endsWith("@gmail.com") ||
-      email.endsWith("@yahoo.com") ||
-      email.endsWith("@outlook.com")
+      inputEmail.endsWith("@gmail.com") ||
+      inputEmail.endsWith("@yahoo.com") ||
+      inputEmail.endsWith("@outlook.com")
     )
   ) {
     setTimeout(() => {
-      errorMsg.textContent = "Please enter a valid Gmail address.";
-      errorMsg.style.opacity = "1";
+      emailError.textContent = "Please enter a valid Gmail address.";
+      emailError.style.opacity = "1";
+    }, 100);
+    return;
+  }
+  msgError.textContent = "";
+  msgError.style.opacity = "0";
+  const wordCount = inputMessage
+    .split(/\s+/)
+    .filter((word) => word.length > 0).length;
+  if (wordCount < 5) {
+    setTimeout(() => {
+      msgError.textContent = "Please enter atlest 5 words in your Message.";
+      msgError.style.opacity = "1";
     }, 100);
     return;
   }
@@ -49,7 +75,7 @@ form.addEventListener("submit", (e) => {
           msg.style.opacity = "1";
           setTimeout(() => {
             msg.style.opacity = "0";
-          }, 2500);
+          }, 10000);
         }, 1000);
       }, 500);
 
