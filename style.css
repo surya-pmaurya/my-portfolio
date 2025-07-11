@@ -569,7 +569,7 @@ nav .fa-solid {
 }
 /* ------------------CSS for iPade or Tab---------------------------- */
 
-@media (min-width: 670px) and (max-width: 1024px) {
+@media (min-width: 670px) and (max-width: 900px) {
   #header {
     background-image: url(image/phone-background.jpg);
   }
